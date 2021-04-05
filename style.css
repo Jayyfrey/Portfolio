@@ -2,9 +2,56 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    margin: 0;
+    background-color: bisque;
+}
+
 main {
     font-family: 'helvetica' 'Times New Roman', Times, serif;
     font-size: 20px;
+}
+
+header {
+    background-color: rgb(196, 109, 4);
+}
+
+footer {
+    background-color: rgb(196, 109, 4);
+}
+
+.logo {
+    font-family: 'Brush Script MT','Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: -3;
+    margin: 0;
+    padding: 10px 0 0 5%;
+}
+
+section.main img {
+    width: 70%;
+    border-radius: 2%;
+}
+
+.group {
+    display:flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.item {
+    flex: 1;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item-other{
+    display: flex;
+    flex-direction:column;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer-signature {
@@ -13,43 +60,13 @@ main {
     font-size: 70px;
 }
 
-#main_menu_name {
-    font-family: 'Brush Script MT','Times New Roman', Times, serif;
-    font-size: 28px;
-    padding-left: 5%;
-    
-}
-
-section.main img {
-    width: 70%;
-    border-radius: 2%;
-}
-
-.flex-group {
-    display:flex;
-    flex-direction: column;
-    padding: 5%;
-}
-
-.item {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
 /* Navigation bar */
 
-header {
-    display: flex;
-    flex-direction: column;
-    background-color: bisque;
-}
 
 header nav {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 header nav ul {
@@ -99,7 +116,6 @@ section.projects {
     background: bisque;
 }
 
-
 @media all and (min-width: 1000px) {
     
     header {
@@ -116,7 +132,7 @@ section.projects {
         padding: 0 10%;
     }
 
-    .flex-group {
+    .group {
         flex-direction: row;
         padding: 10%;
     }
